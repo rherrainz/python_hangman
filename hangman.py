@@ -127,7 +127,7 @@ while tries > 0:
                 mock = mock[:i] + letter + mock[i + 1:]
         print(hangman[tries])
         print(mock)
-        print("Intentos restantes: ", tries)
+        print("Fallos restantes: ", tries)
         if mock == word:
             print("Ganaste!")
             break
@@ -136,8 +136,8 @@ while tries > 0:
         print("La letra no esta en la palabra")
         print(hangman[tries])
         print(mock)
-        print("Intentos restantes: ", tries)
         tries -= 1
+        print("Fallos restantes: ", tries)
 
 if tries == 0:
     print("Perdiste!")

@@ -117,6 +117,8 @@ mock = mock_word(word)
 
 tries = 5
 
+print("Adivina el animal: ")
+
 while tries > 0:
     print("Ingrese una letra: ")
     letter = input().upper()
